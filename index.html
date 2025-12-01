@@ -10,12 +10,10 @@
         <textarea rows="10" cols="60" placeholder="ここに何かを記入！" style="font-size: 1.5em;" autofocus></textarea>
         <script>
             window.addEventListener('beforeunload', function (event) {
+                window.prompt('勝ったと思った？お疲れ様です！！もう1回頑張れ！');
+                window.prompt('引っ掛かったね～～。対策してんだよ。諦めろ。\nプログラマーなめんな。');
                 event.preventDefault();
                 event.returnValue = '';
-                window.addEventListener('beforeunload', function (event) {
-                    event.preventDefault();
-                    event.returnValue = '';
-                });
             });
         </script>
     </body>
